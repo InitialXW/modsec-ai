@@ -18,7 +18,7 @@ sam build --use-container
 cdk deploy --all --require-approval never
 ```
 ## Test
-- Go to 'research-input-123456789012-your-region' S3 bucket
+- Go to 'research-input-123456789012-your-region' S3 bucket in your AWS account
 - Upload the input text file that contains valid ModSecurity rules.
 - Go to 'research-output-123456789012-your-region' S3 bucket to check analysis report and test code as a Lambda function zip package.
 - Tune content in '/lambda/src/handlers/researchIt/prompt.md' to suit your analysis needs.
