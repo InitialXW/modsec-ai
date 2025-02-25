@@ -5,8 +5,14 @@
 3. 1 AWS account with appropriate permissions to use Anthropic Claud 3.7 Sonnet model on Amazon Bedrock in cross-region inference.
 
 ## Stack Deployment
+- create a ***.env*** file in project root directory that looks like the below:
+```text
+CDK_PROCESSING_ACCOUNT=123456789012
+CDK_PROCESSING_REGION=us-west-2
+```
 ```shell
 # in project directory run:
+npm install
 sam build --use-container
 cdk deploy --all --require-approval never
 ```
