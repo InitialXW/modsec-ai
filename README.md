@@ -10,6 +10,7 @@
 CDK_PROCESSING_ACCOUNT=123456789012
 CDK_PROCESSING_REGION=us-west-2
 ```
+- then run below:
 ```shell
 # in project directory run:
 npm install
