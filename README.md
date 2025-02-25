@@ -2,7 +2,7 @@
 ## Prerequisite
 1. AWS SAM installed. SAM is used to build AWS Lambda package to be deployed by AWS CDK
 2. AWS CDK installed
-3. 1 AWS account with appropriate permissions to use Anthropic Claud 3.7 Sonnet model on Amazon Bedrock in cross-region inference.
+3. 1x AWS account with appropriate permissions to use Anthropic Claud 3.7 Sonnet model on Amazon Bedrock with cross-region inference.
 
 ## Stack Deployment
 - create a ***.env*** file in project root directory that looks like the below:
