@@ -1,0 +1,14 @@
+*.js
+!jest.config.js
+*.d.ts
+node_modules
+**/.aws-sam
+**/.env
+.cdk.staging
+cdk.out
+.vscode
+lambda/src/events
+**/*.bkup
+prompt-templates/bkup
+*.drawio
+deployment

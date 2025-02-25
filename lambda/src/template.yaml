@@ -1,0 +1,25 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Utility functions for AiOps
+
+Globals:
+  Function:
+    Architectures:
+      # - x86_64
+      - arm64
+
+Resources:
+  ResearchItFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: handlers/researchIt/
+      Handler: app.lambda_handler
+      Runtime: python3.11
+      Timeout: 120
+      MemorySize: 128
+      Environment:
+        Variables:
+          TABLE_NAME: ""
+          INPUT_BUCKET: ""
+          OUTPUT_BUCKET: ""
